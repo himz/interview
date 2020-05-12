@@ -6,11 +6,11 @@ import common.TreeNode;
 import java.util.*;
 
 /**
- * This is a util class to contain all tree related methods.
+ * This is a util class to contain all patterns.tree related methods.
  */
 public class TreeUtils {
     /**
-     * This method is to construct a normal binary tree. The input reads like
+     * This method is to construct a normal binary patterns.tree. The input reads like
      * this for [5, 3, 6, 2, 4, null, null, 1]:
      5
      /   \
@@ -20,7 +20,7 @@ public class TreeUtils {
      /
      1
      */
-    /*"This is usually how Leetcode OJ passes a binary tree into testing: "
+    /*"This is usually how Leetcode OJ passes a binary patterns.tree into testing: "
             + "https://leetcode.com/faq/#binary-tree, I wrote this function for my own ease of testing when copying"
             + "the test case from Leetcode in the form of [1, null, 2, 3].") */
     public static TreeNode constructBinaryTree(List<Integer> treeValues) {
@@ -42,7 +42,7 @@ public class TreeUtils {
     }
 
     public static void printBinaryTree(TreeNode root) {
-        CommonUtils.println("\nPrinting out the binary tree in a very visual manner as below:\n");
+        CommonUtils.println("\nPrinting out the binary patterns.tree in a very visual manner as below:\n");
 
         // imitating from BTreePrinter class
         int maxLevel = TreeUtils.maxLevel(root);
@@ -139,12 +139,12 @@ public class TreeUtils {
 
         List<Integer> treeValues2 = Arrays.asList(0, 1, 2, 3, 4, 5, 6);
 
-        //test tree construction
+        //test patterns.tree construction
         //		TreeNode root1 = bruteForceConstructBinaryTree(treeValues2);
         //		inOrderTraversal(root1);
         //		printBinaryTree(root1);
 
-        // test tree construction
+        // test patterns.tree construction
         TreeNode root2 = constructBinaryTree(treeValues);
         inOrderTraversal(root2);
         printBinaryTree(root2);
