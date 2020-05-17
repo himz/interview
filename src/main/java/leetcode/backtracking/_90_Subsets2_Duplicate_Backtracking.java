@@ -25,6 +25,7 @@ import java.util.*;
 public class _90_Subsets2_Duplicate_Backtracking {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(nums);
         dfs(result, nums, new ArrayList<>(), 0);
         return result;
     }
