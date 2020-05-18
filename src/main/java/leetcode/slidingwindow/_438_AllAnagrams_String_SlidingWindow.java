@@ -5,6 +5,40 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
+ *
+ * Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.
+ *
+ * The order of output does not matter.
+ *
+ * Example 1:
+ *
+ * Input:
+ * s: "cbaebabacd" p: "abc"
+ *
+ * Output:
+ * [0, 6]
+ *
+ * Explanation:
+ * The substring with start index = 0 is "cba", which is an anagram of "abc".
+ * The substring with start index = 6 is "bac", which is an anagram of "abc".
+ *
+ * Example 2:
+ *
+ * Input:
+ * s: "abab" p: "ab"
+ *
+ * Output:
+ * [0, 1, 2]
+ *
+ * Explanation:
+ * The substring with start index = 0 is "ab", which is an anagram of "ab".
+ * The substring with start index = 1 is "ba", which is an anagram of "ab".
+ * The substring with start index = 2 is "ab", which is an anagram of "ab".
+ *
+ * https://leetcode.com/problems/find-all-anagrams-in-a-string/
+ */
 public class _438_AllAnagrams_String_SlidingWindow {
 
     private Map<Character, Integer> initMap(String p, Map<Character, Integer> bMap) {
@@ -99,24 +133,6 @@ public class _438_AllAnagrams_String_SlidingWindow {
                 pMap[s.charAt(begin) - 'a']++;
                 begin++;
             }
-
-
-/*
-            if (pMap[s.charAt(end++) - 'a']-- >= 1) {
-                counter--;
-            }
-
-
-            if (counter == 0) {
-                result.add(begin);
-            }
-
-            if (end - begin == p.length() && pMap[s.charAt(begin++) - 'a']++ >= 0) {
-                counter++;
-            }*/
-
-
-
 
         }
         return result;
