@@ -3,7 +3,7 @@ package leetcode;
 import leetcode.backtracking.SubsetsGenericBacktrack;
 import leetcode.backtracking._46_Permutations_Backtrack;
 import leetcode.backtracking._47_Permutations_Unique_Backtrack;
-import leetcode.string._451_SortCharByFrequency;
+import leetcode.heap.pq._451_SortCharByFrequency;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;

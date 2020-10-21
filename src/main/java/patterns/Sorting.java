@@ -23,6 +23,7 @@ public class Sorting {
         quickSort(nums, l, mid);
         quickSort(nums, mid + 1, r);
     }
+    // Hoare's Algorithm https://www.youtube.com/watch?v=h_9kAXFKJwY l&r at the opposite end
     private int partition(int[] nums, int l, int r) {
         int pivot = nums[l];
         while (l < r) {
@@ -33,6 +34,20 @@ public class Sorting {
         }
         nums[l] = pivot;
         return l;
+    }
+
+    // Use i, j starting from 0(left). Swap values as needed.Move i forward on swap.
+    private int partition2(int[] nums, int lo, int hi) {
+        int pivot = nums[hi];
+        int i = lo;
+        for (int j = lo; j < hi; j++) {
+            if (nums[j] <= pivot) {
+                swap(nums, i, j);
+                i++;
+            }
+        }
+        swap(nums, i, hi);
+        return i;
     }
 
     // top-down merge sort
