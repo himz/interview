@@ -1,4 +1,4 @@
-package leetcode.backtracking;
+package UniqueCodeToRemember;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,13 +17,14 @@ public class SubsetsGenericBacktrack {
         List<List<Integer>> result = new ArrayList<>();
 
         N = nums.length;
-        dfs(nums, new ArrayList<>(), result, 0);
+        dfs(nums,  new ArrayList<>(), result, 0);
         return result;
     }
 
         // Optimization, track used numbers separated in used boolean array, will save contains call.
     void dfs(int[] nums, List<Integer> tmpList, List<List<Integer>> result, int start) {
         result.add(new ArrayList<>(tmpList));
+
         // COndition to get the permutations .. all possible.
         /*if(tmpPermuteList.size() == N) {
             result.add(new ArrayList<>(tmpPermuteList));
