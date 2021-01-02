@@ -41,7 +41,6 @@ public class _79_wordSearch_dfs_matrix {
         if(board == null || board.length == 0) {
             return false;
         }
-
         m = board.length;
         n = board[0].length;
         int i = 0,j =0;
