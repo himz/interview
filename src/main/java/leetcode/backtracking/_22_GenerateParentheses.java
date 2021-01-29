@@ -20,6 +20,43 @@ import java.util.List;
  *
  */
 public class _22_GenerateParentheses {
+    // This is backtracking solution, with pruning of bad trees.
+    public List<String> generateParenthesisGood(int n) {
+        List<String> result = new ArrayList<>();
+        dfs(result, n, n, new String());
+        return result;
+    }
+    void dfs(List<String> result, int oc, int cc, String output) {
+        // BC
+        if(oc == 0 && cc == 0) {
+            result.add(new String(output));  //O(N)
+            return;
+        }
+        if(oc < 0 || cc < 0) {
+            // return -- not possible  - 0 is valid inpu
+            return;
+        }
+        // Bounding Function - Restriction
+        if(cc < oc) {
+            // this is useless tree, prune
+            return;
+        }
+
+        // Induction
+        String o1 = new String(output);
+
+        String o2 = new String(output);
+
+        // add oc to o1, cc to o2
+        o1  = o1 + "(";
+        dfs(result, oc - 1, cc, o1);
+        o2 = o2 + ")";
+        dfs(result, oc, cc -1, o2);
+
+
+    }
+
+
     /**
      * Algo - Naive SOlution
      *         1) Find all permutations of the parenthesis.

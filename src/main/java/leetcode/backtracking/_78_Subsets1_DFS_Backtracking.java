@@ -40,6 +40,5 @@ public class _78_Subsets1_DFS_Backtracking {
             dfs(res, nums, tmpList,i + 1);
             tmpList.remove(tmpList.size() - 1);
         }
-
     }
 }

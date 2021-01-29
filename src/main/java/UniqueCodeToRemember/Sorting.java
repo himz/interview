@@ -97,15 +97,15 @@ public class Sorting {
 
     // Heap Sort
     private void heapSort(int[] nums) {
-        for (int i = nums.length / 2 - 1; i >= 0; i--) {
-            heapify(nums, i, nums.length - 1);
+        for (int i = nums.length / 2 - 1; i >= 0; i--) { // This comes to about O(n) - https://stackoverflow.com/questions/9755721/how-can-building-a-heap-be-on-time-complexity
+            heapify(nums, i, nums.length - 1);      // 50% or elements, are not heapified. Only root node, will need full logn. As such, for big n, it is O(n)
         }
-        for (int i = nums.length - 1; i >= 1; i--) {
+        for (int i = nums.length - 1; i >= 1; i--) { // This is deletion step, run n times - O(nlogn)
             swap(nums, 0, i);
             heapify(nums, 0, i - 1);
         }
     }
-    private void heapify(int[] nums, int i, int end) {
+    private void heapify(int[] nums, int i, int end) {  // O(logn) - but not for all elements. As such, practically comes to O(1) -- for building the heap.
         while (i <= end) {
             int l = 2 * i + 1, r = 2 * i + 2;
             int maxIndex = i;

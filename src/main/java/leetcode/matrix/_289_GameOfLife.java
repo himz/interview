@@ -47,7 +47,7 @@ package leetcode.matrix;
 
 public class _289_GameOfLife {
     /**
-     * Algo: This is naive implementation. To make it intereseting, we cannot use extra memory.
+     * Algo: This is naive implementation. To make it interesting, we cannot use extra memory.
      * Keyfact: 8 neighbors. If i see 8, think of a byte. Store value of all active neighbors as byte array in each grid.
      * THis will be most efficient. Another could be, 10 implies 0. -10 implies 1. Now no. of neighbors is lsb. 11 - bit is 0, with 1 neighbor.
      */

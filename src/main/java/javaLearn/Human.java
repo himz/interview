@@ -1,8 +1,6 @@
 package javaLearn;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Stack;
+import java.util.*;
 
 public class Human {
     String name;
@@ -12,16 +10,35 @@ public class Human {
 
         Deque<Integer> stack = new ArrayDeque<>();
         Deque<Integer> queue = new ArrayDeque<>();
-
-        stack.push();
+        //stack.push();
         stack.pop();
         stack.peek();
 
+        HashMap map;
 
-        queue.offer();
+        //queue.offer();
         queue.poll();
         queue.peek();
+        PriorityQueue<Integer> pQueue= new PriorityQueue<Integer>(new Comparator<Integer>() {
+            public int compare(Integer a, Integer b) {
+                if(a > b) {
+                    return 1;
+                } else {
+                    return -1;
+                }
+            }});
 
+
+        HashMap<Integer, PriorityQueue<Integer>> h = new HashMap<>();
+
+    }
+
+    class Animal implements Comparable {
+
+        @Override
+        public int compareTo(Object o) {
+            return 0;
+        }
     }
 }
 

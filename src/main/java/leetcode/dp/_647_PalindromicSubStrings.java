@@ -55,7 +55,7 @@ public class _647_PalindromicSubStrings {
             for(int j = i+1; j < len+1; j++) {
                 // Calculat dp
                 if(s.charAt(i-1) == s.charAt(j-1)) {
-                    if(j-1 <i +1) {
+                    if(j-1 < i +1) {
                         //consecutive nos
                         dp[i][j] = true;
                     } else {

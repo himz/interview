@@ -11,7 +11,7 @@ import java.util.List;
  * https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
  */
 // All possible repeated subsets
-public class SubsetsGenericBacktrack {
+public class SubsetsGenericBacktrack_Template {
     int N;
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();

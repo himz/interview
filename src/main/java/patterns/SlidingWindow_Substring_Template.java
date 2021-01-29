@@ -1,4 +1,4 @@
-package leetcode.slidingwindow;
+package patterns;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -10,7 +10,7 @@ import java.util.Map;
  * https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem
  */
 
-public class _TemplateForAllSubstringSlidingWindow {
+public class SlidingWindow_Substring_Template {
     public List<Integer> slidingWindowTemplateByHarryChaoyangHe(String s, String t) {
         //init a collection or int value to save the result according the question.
         List<Integer> result = new LinkedList<>();
@@ -57,6 +57,7 @@ public class _TemplateForAllSubstringSlidingWindow {
                 begin++;
             }
         }
-        return result;
+        return result
+                ;
     }
 }

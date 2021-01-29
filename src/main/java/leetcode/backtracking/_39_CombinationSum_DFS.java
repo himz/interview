@@ -4,36 +4,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
- *
+ * Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique
+ * combinations in candidates where the candidate numbers sums to target.
+ * <p>
  * The same repeated number may be chosen from candidates unlimited number of times.
- *
+ * <p>
  * Note:
- *
- *     All numbers (including target) will be positive integers.
- *     The solution set must not contain duplicate combinations.
- *
+ * <p>
+ * All numbers (including target) will be positive integers.
+ * The solution set must not contain duplicate combinations.
+ * <p>
  * Example 1:
- *
+ * <p>
  * Input: candidates = [2,3,6,7], target = 7,
  * A solution set is:
  * [
- *   [7],
- *   [2,2,3]
+ * [7],
+ * [2,2,3]
  * ]
- *
+ * <p>
  * Example 2:
- *
+ * <p>
  * Input: candidates = [2,3,5], target = 8,
  * A solution set is:
  * [
- *   [2,2,2,2],
- *   [2,3,3],
- *   [3,5]
+ * [2,2,2,2],
+ * [2,3,3],
+ * [3,5]
  * ]
  * https://leetcode.com/problems/combination-sum/
- *
  */
 public class _39_CombinationSum_DFS {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -44,19 +43,19 @@ public class _39_CombinationSum_DFS {
 
     void dfs(List<List<Integer>> result, int[] nums, List<Integer> tmpList, int start, int target) {
 
-        if(target < 0){
+        if (target < 0) {
             return;
         }
-        if(0 == target) {
+        if (0 == target) {
             result.add(new ArrayList<>(tmpList));
             return;
         }
 
-        for(int i = start; i < nums.length; i++) {
+        for (int i = start; i < nums.length; i++) {
 
             tmpList.add(nums[i]);
             // We want duplicates !!
-            dfs(result, nums, tmpList, i , target - nums[i]);
+            dfs(result, nums, tmpList, i, target - nums[i]);
 
             tmpList.remove(tmpList.size() - 1);
         }

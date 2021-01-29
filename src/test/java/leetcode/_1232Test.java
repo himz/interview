@@ -1,13 +1,9 @@
 package leetcode;
 
-import leetcode.backtracking._78_Subsets1_DFS_Backtracking;
-import leetcode.backtracking._90_Subsets2_Duplicate_Backtracking;
 import leetcode.math._1232_StraightLine;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
-
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 

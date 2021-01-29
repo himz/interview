@@ -38,6 +38,7 @@ public class _46_Permutations_Backtrack {
     void dfs(int[] nums, List<Integer> tmpPermuteList, List<List<Integer>> result) {
         if(tmpPermuteList.size() == N) {
             result.add(new ArrayList<>(tmpPermuteList));
+            System.out.println(result);
             return;
         }
         for(int i = 0; i < N; i++) {

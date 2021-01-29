@@ -1,15 +1,14 @@
 package leetcode.tree;
 
+import common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import common.TreeNode;
-
 // Level Order traversal with each level separated
 public class _637_LevelTraversal_BFS_Avg {
-
     public List<Double> averageOfLevels(TreeNode root) {
         ArrayList<Double> res = new ArrayList<>();
         Queue<TreeNode> q = new LinkedList();

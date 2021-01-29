@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Template examples for all sortings
  */
-public class Sorting {
+public class Sorting_Template {
     public List<Integer> sortArray(int[] nums) {
         List<Integer> res = new ArrayList<>();
         if (nums == null || nums.length == 0) return res;
