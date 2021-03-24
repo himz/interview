@@ -11,8 +11,27 @@ public class Human {
         Deque<Integer> stack = new ArrayDeque<>();
         Deque<Integer> queue = new ArrayDeque<>();
         //stack.push();
-        stack.pop();
-        stack.peek();
+
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+        System.out.println(stack);
+        System.out.println("Stack Peek: " + stack.peek());
+        System.out.println("Stack Peek Last: " + stack.peekLast());
+        System.out.println("Stack pop:" + stack.pop());
+
+
+        queue.offer(1);
+        queue.offer(2);
+        queue.offer(3);
+        queue.offer(4);
+        queue.offer(5);
+        System.out.println(queue);
+        System.out.println("Q peek: " + queue.peek());
+        System.out.println("Q peekLast: " + queue.peekLast());
+        System.out.println("Q poll:" + queue.poll());
 
         HashMap map;
 

@@ -39,7 +39,10 @@ package leetcode.heap.pq;
  * https://leetcode.com/problems/k-closest-points-to-origin/
  */
 
+import java.util.ArrayDeque;
 import java.util.PriorityQueue;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.IntConsumer;
 
 /**
  * Use heap to store the points. Using min heap.
@@ -75,7 +78,6 @@ public class _973_KClosestPointsToOrigin {
 class Pair<T,R> {
     T object1;
     R object2;
-
     Pair(T object1, R object2) {
         this.object1 = object1;
         this.object2 = object2;

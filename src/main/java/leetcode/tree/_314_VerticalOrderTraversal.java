@@ -110,6 +110,7 @@ public class _314_VerticalOrderTraversal {
         List<Integer> list;
         if(map.containsKey(nodeVal)) {
             list = map.get(nodeVal);
+
         } else {
             list = new ArrayList<>();
         }

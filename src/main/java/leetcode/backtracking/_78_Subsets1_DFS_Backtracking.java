@@ -24,7 +24,6 @@ import java.util.List;
  *   []
  * ]
  */
-// Backtracking N Queen
 public class _78_Subsets1_DFS_Backtracking {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
