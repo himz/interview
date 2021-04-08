@@ -75,9 +75,6 @@ public class _609_FindDuplicateFile {
                 list.add(dir + "/" + file);
                 map.put(content, list);
             }
-
-            ReentrantReadWriteLock
-
         }
 
         List<List<String>> result = new ArrayList<>();
