@@ -53,9 +53,6 @@ public class _200_NumberOfIslands_UnionFind {
             }
         }
 
-        String asr = "Asdfasd";
-        asr.split()
-
         return uf.count;
     }
 
