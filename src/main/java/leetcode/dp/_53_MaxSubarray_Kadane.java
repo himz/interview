@@ -34,7 +34,7 @@ public class _53_MaxSubarray_Kadane {
             int sum1 = nums[j];
             int sum2 = dp[j-1] + nums[j];
 
-            int sum = sum1>sum2 ? sum1:sum2;
+            int sum = sum1 > sum2 ? sum1:sum2;
             if(sum > maxSum) {
                 maxSum = sum;
             }

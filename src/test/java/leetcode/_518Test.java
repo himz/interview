@@ -1,14 +1,8 @@
 package leetcode;
 
-import leetcode.backtracking.SubsetsGenericBacktrack;
-import leetcode.backtracking._39_CombinationSum_DFS;
-import leetcode.backtracking._40_CombinationSum2_Duplicates_DFS;
-import leetcode.dfs._518_CoinChange2;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
-
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
