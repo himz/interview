@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.dfs._200_NumberOfIslands_DFS;
+import leetcode.dfsbfs._200_NumberOfIslands_DFS;
 import leetcode.unionfind._200_NumberOfIslands_UnionFind;
 import org.junit.BeforeClass;
 import org.junit.Test;import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package leetcode.dfs;
+package leetcode.dfsbfs;
 
 /**
  * Given an m x n board and a word, find if the word exists in the grid.
