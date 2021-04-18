@@ -99,15 +99,8 @@ public class _934_ShortestBridge {
                 }
             }
             prev = curr;
-
-
-
         }
-
         return -1;
-
-
-
     }
 
 
